@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:31 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/14 17:20:59 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/16 19:34:50 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,4 +64,7 @@ int	main(void)
 	printf("%s\n", ft_itoa(-2147483648));
 	printf("%s\n", ft_itoa(2147483647));
 	printf("%s\n", ft_itoa(42));
+	printf("%s\n", ft_itoa(-623));
+	printf("%s\n", ft_itoa(-0));
+	printf("%s\n", ft_itoa(-156));
 }*/

@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 12:37:13 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/16 19:31:36 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,4 +62,14 @@ int	main(void)
 
 	printf("%d\n", ft_atoi(str3));
 	printf("%d\n", atoi(str3));
+
+	char	str4[] = "\e06050";
+
+	printf("%d\n", ft_atoi(str4));
+	printf("%d\n", atoi(str4));
+
+	char	str5[] = "99999999999999999999999999";
+
+	printf("%d\n", ft_atoi(str5));
+	printf("%d\n", atoi(str5));
 }*/

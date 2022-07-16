@@ -1,48 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/16 19:20:00 by jmeulema         ###   ########.fr       */
+/*   Created: 2022/07/04 13:33:49 by jmeulema          #+#    #+#             */
+/*   Updated: 2022/07/16 16:19:30 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t		i;
-	char		*d1;
-	const char	*s1;
+	int	i;
 
 	i = 0;
-	if (!src && !dst)
-		return (NULL);
-	d1 = dst;
-	s1 = src;
-	while (i < n)
+	if (!s || !f)
+		return ;
+	while (s[i])
 	{
-		d1[i] = s1[i];
+		f(i, &s[i]);
 		i++;
 	}
-	return (dst);
 }
 
-/*#include <stdio.h>
-#include <string.h>
-
-int main(void)
+/*void	f(unsigned int index, char *s)
 {
-	char d[50] = {0};
-	const char	s[50] = "je suis jerome";
+	ft_putchar_fd(*s, 1);
+	ft_putchar_fd('[', 1);
+	ft_putnbr_fd(index, 1);
+	ft_putchar_fd(']', 1);
+}
 
-	printf("%s\n", ft_memcpy(d, s, 3));
+int	main(void)
+{
+	char	str1[] = "abc";
 
-	char d1[50] = { 0 };
-	const char	s1[50] = "je suis jerome";
-
-	printf("%s\n", memcpy(d1, s1, 3));
+	ft_striteri(str1, *f);
 }*/

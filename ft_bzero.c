@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 12:39:09 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/16 19:17:29 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	ft_bzero(void *s, size_t n)
 	size_t	i;
 	char	*p;
 
+	i = 0;
 	p = (char *)s;
 	while (i < n)
 	{

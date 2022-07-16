@@ -1,48 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/16 19:20:00 by jmeulema         ###   ########.fr       */
+/*   Created: 2022/07/04 13:33:49 by jmeulema          #+#    #+#             */
+/*   Updated: 2022/07/16 16:20:38 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t		i;
-	char		*d1;
-	const char	*s1;
+	char			*str;
+	size_t			i;
 
 	i = 0;
-	if (!src && !dst)
+	if (!s || !f)
 		return (NULL);
-	d1 = dst;
-	s1 = src;
-	while (i < n)
+	str = malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!str)
+		return (NULL);
+	while (s[i])
 	{
-		d1[i] = s1[i];
+		str[i] = f(i, s[i]);
 		i++;
 	}
-	return (dst);
+	str[i] = '\0';
+	return (str);
 }
 
 /*#include <stdio.h>
-#include <string.h>
 
-int main(void)
+char	f(unsigned int i, char c)
 {
-	char d[50] = {0};
-	const char	s[50] = "je suis jerome";
+	char			str;
 
-	printf("%s\n", ft_memcpy(d, s, 3));
+	i = 0;
+	str = c + 1;
+	return (str);
+}
 
-	char d1[50] = { 0 };
-	const char	s1[50] = "je suis jerome";
+int	main(void)
+{
+	char	str1[] = "abc";
+	char	*str2;
 
-	printf("%s\n", memcpy(d1, s1, 3));
+	str2 = ft_strmapi(str1, *f);
+	printf("%s\n", str2);
 }*/
