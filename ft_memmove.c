@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 13:11:04 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/18 13:44:52 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,12 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	size_t	dstlen;
-	size_t	srclen;
+	size_t	i;
 
-	dstlen = ft_strlen(dst);
-	srclen = ft_strlen(src);
+	i = 0;
 	if (!dst && !src)
 		return (NULL);
-	if (srclen < dstlen)
+	if (src < dst)
 	{
 		while (len > 0)
 		{
@@ -31,10 +29,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	else
 	{
-		while (len > 0)
+		while (i < len)
 		{
-			((char *)dst)[len - 1] = ((char *)src)[len -1];
-			len --;
+			((char *)dst)[i] = ((char *)src)[i];
+			i++;
 		}
 	}
 	return (dst);
