@@ -6,35 +6,36 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/16 19:31:36 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/18 12:51:33 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "limits.h"
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	sign;
-	int	result;
+	int		sign;
+	long	result;
 
-	i = 0;
 	sign = 1;
 	result = 0;
-	while (str[i] <= 32)
-		i++;
-	if (str[i] == '-')
+	while (*str == 32 || (*str >= 9 && *str <= 13))
+		str++;
+	if (*str == '-' || *str == '+')
 	{
-		sign = -1;
-		i++;
+		if (*str == '-')
+			sign *= -1;
+		str++;
 	}
-	else if (str[i] == '+')
-		i++;
-	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
+	while (*str >= '0' && *str <= '9')
 	{
-		result *= 10;
-		result += str[i] - '0';
-		i++;
+		result = result * 10 + *str - 48;
+		if (sign * result > INT_MAX)
+			return (-1);
+		if (sign * result < INT_MIN)
+			return (0);
+		str++;
 	}
 	return (sign * result);
 }

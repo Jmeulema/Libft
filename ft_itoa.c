@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:31 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/16 19:34:50 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/18 13:32:29 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ static size_t	ft_get_len(int n)
 	if (n == 0)
 		return (1);
 	len = 0;
-	if (n <= 0)
+	if (n < 0)
+	{
+		n *= -1;
 		len++;
+	}
 	while (n)
 	{
 		n /= 10;
@@ -31,9 +34,9 @@ static size_t	ft_get_len(int n)
 
 char	*ft_itoa(int n)
 {
-	long	nb;
-	size_t	len;
-	char	*result;
+	size_t		len;
+	long int	nb;
+	char		*result;
 
 	len = ft_get_len(n);
 	nb = n;
@@ -43,10 +46,10 @@ char	*ft_itoa(int n)
 	if (n < 0)
 	{
 		result[0] = '-';
-		nb = -nb;
+		nb *= -1;
 	}
 	if (n == 0)
-		result[0] = '\0';
+		result[0] = '0';
 	result[len--] = '\0';
 	while (nb)
 	{
