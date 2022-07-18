@@ -6,7 +6,7 @@
 #    By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/16 17:42:28 by jmeulema          #+#    #+#              #
-#    Updated: 2022/07/16 18:27:43 by jmeulema         ###   ########.fr        #
+#    Updated: 2022/07/18 18:00:44 by jmeulema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -50,6 +50,7 @@ SRC = \
 			ft_strrchr.c \
 			ft_strtrim.c \
 			ft_substr.c \
+			ft_split.c \
 			ft_strlcat.c \
 			ft_strlcpy.c \
 			ft_strlen.c \
