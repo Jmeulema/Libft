@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 19:31:36 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/18 14:42:47 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/20 18:03:50 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include "limits.h"
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -44,6 +45,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	**ft_split(char const *s, char c);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);

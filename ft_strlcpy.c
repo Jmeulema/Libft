@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:33:30 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 13:18:24 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/20 15:05:02 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ int	main(void)
 {
 	char dest[100];
     char src [] = "bonjour";
-    printf("%zu\n", ft_strlcpy(dest, src, 20));
+    printf("%zu\n", ft_strlcpy(dest, src, 4));
     printf("%s\n", dest);
     char dest1[100];
     char src1 [] = "bonjour";
-    printf("%zu\n", strlcpy(dest1, src1, 20));
+    printf("%zu\n", strlcpy(dest1, src1, 4));
     printf("%s\n", dest1);
     char dest2[] = "salut";
     char src2 [] = "bonjour";

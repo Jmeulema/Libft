@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/16 19:20:00 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/20 19:14:16 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 int main(void)
 {
-	char d[50] = {0};
-	const char	s[50] = "je suis jerome";
+	char d[50] = {1, 2, 3};
+	const char	s[50] = "vous etes fort";
 
 	printf("%s\n", ft_memcpy(d, s, 3));
 
-	char d1[50] = { 0 };
-	const char	s1[50] = "je suis jerome";
+	char d1[50] = {1, 2, 3};
+	const char	s1[50] = "vous etes fort";
 
 	printf("%s\n", memcpy(d1, s1, 3));
 }*/

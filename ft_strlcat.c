@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:33:04 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 13:17:04 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/20 16:35:14 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,6 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	srclen = ft_strlen(src);
 	i = 0;
 	s = (char *)src;
-	if (size == 0)
-		return (srclen);
 	if (size < destlen)
 		return (size + srclen);
 	while (destlen + i < size && s[i] != '\0')
@@ -46,30 +44,32 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 
 int	main(void)
 {
-	char dest6 [] = "lol";
-	char src6 [] = "lil";
+	char dest6 [15] = "lol";
+	char src6 [15] = "lil";
 	printf("%zu\n", strlcat(dest6, src6, 2));
 	printf("%s\n", dest6);
-	char dest7 [] = "lol";
-	char src7 [] = "lil";
+	char dest7 [15] = "lol";
+	char src7 [15] = "lil";
 	printf("%zu\n", strlcat(dest7, src7, 2));
 	printf("%s\n", dest7);
-	char dest8 [] = "lol";
-	char src8 [] = "lil";
+	char dest8 [15] = "lol";
+	char src8 [15] = "lil";
 	printf("%zu\n", strlcat(dest8, src8, 0));
 	printf("%s\n", dest8);
-	char dest9 [] = "lol";
-	char src9 [] = "lil";
+	char dest9 [15] = "lol";
+	char src9 [15] = "lil";
 	printf("%zu\n", strlcat(dest9, src9, 0));
 	printf("%s\n", dest9);
-    char dest [] = "salut";
-    char src [] = "bonjour";
-    printf("%zu\n", ft_strlcat(dest, src, 7));
+    char dest [15] = "salut";
+    char src [15] = "bonjour";
+    printf("%zu\n", ft_strlcat(dest, src, 9));
     printf("%s\n", dest);
+	printf("%s\n", src);
     char dest1 [100] = "salut";
     char src1 [] = "bonjour";
-    printf("%zu\n", strlcat(dest1, src1, 7));
+    printf("%zu\n", strlcat(dest1, src1, 9));
     printf("%s\n", dest1);
+	printf("%s\n", src1);
     char dest2 [] = "salut";
     char src2 [] = "bonjour";
     printf("%zu\n", ft_strlcat(dest2, src2, 4));

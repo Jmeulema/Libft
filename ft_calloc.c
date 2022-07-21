@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:29:32 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 12:56:29 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/21 16:26:14 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	void	*result;
 
-	result = (void *)malloc(count * size);
+	result = malloc(sizeof(void ) * count * size);
 	if (!result)
 		return (NULL);
 	ft_bzero(result, count * size);

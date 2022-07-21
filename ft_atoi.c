@@ -6,12 +6,11 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/18 12:51:33 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/20 18:05:39 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "limits.h"
 
 int	ft_atoi(const char *str)
 {

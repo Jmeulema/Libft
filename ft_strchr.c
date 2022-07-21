@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:32:03 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 13:13:39 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/21 13:18:57 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strchr(const char *s, int c)
 			return ((char *)&s[i]);
 		i++;
 	}
-	if (s[i] == 0 && c == 0)
+	if (!s[i] && !c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
@@ -34,7 +34,7 @@ char	*ft_strchr(const char *s, int c)
 int main()
 {
     int c;
-    char s[] = "j'aime les pommes";
+    char s[] = "0j'aime les pommes";
     
     c = 'e';
     printf("%s\n", ft_strchr(s, c));
@@ -44,6 +44,9 @@ int main()
     printf("%s\n", ft_strchr(s, c));
     printf("%s\n", strchr(s, c));
 
+     c = '0';
+    printf("%s\n", ft_strchr(s, c));
+    printf("%s\n", strchr(s, c));
 
     c = '\0';
     printf("%s\n", ft_strchr(s, c));

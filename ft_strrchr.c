@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:31 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 13:25:28 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/20 17:33:29 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	if (position > 0 || (unsigned char)str[0] == (unsigned char)c)
 		return (&str[position]);
-	if (str[i] == 0 && c == 0)
+	if (!str[i] && !c)
 		return (&str[i]);
 	return (NULL);
 }
