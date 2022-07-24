@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/20 18:05:39 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:48:46 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,37 +39,34 @@ int	ft_atoi(const char *str)
 	return (sign * result);
 }
 
-/*#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	str[] = "     +--+-125857";
+// int	main(void)
+// {
+// 	ft_atoi((void *)0);
 
-	printf("%d\n", ft_atoi(str));
-	printf("%d\n", atoi(str));
+// 	char	str1[] = "     -12&5857";
 
-	char	str1[] = "     -12&5857";
+// 	printf("%d\n", ft_atoi(str1));
+// 	printf("%d\n", atoi(str1));
 
-	printf("%d\n", ft_atoi(str1));
-	printf("%d\n", atoi(str1));
+// 	char	str2[] = "     +125857";
 
-	char	str2[] = "     +125857";
+// 	printf("%d\n", ft_atoi(str2));
+// 	printf("%d\n", atoi(str2));
 
-	printf("%d\n", ft_atoi(str2));
-	printf("%d\n", atoi(str2));
+// 	char	str3[] = "     ------125857";
 
-	char	str3[] = "     ------125857";
+// 	printf("%d\n", ft_atoi(str3));
+// 	printf("%d\n", atoi(str3));
 
-	printf("%d\n", ft_atoi(str3));
-	printf("%d\n", atoi(str3));
+// 	char	str4[] = "\e06050";
 
-	char	str4[] = "\e06050";
+// 	printf("%d\n", ft_atoi(str4));
+// 	printf("%d\n", atoi(str4));
 
-	printf("%d\n", ft_atoi(str4));
-	printf("%d\n", atoi(str4));
+// 	char	str5[] = "-99999999999999999999999999";
 
-	char	str5[] = "99999999999999999999999999";
-
-	printf("%d\n", ft_atoi(str5));
-	printf("%d\n", atoi(str5));
-}*/
+// 	printf("%d\n", ft_atoi(str5));
+// 	printf("%d\n", atoi(str5));
+// }

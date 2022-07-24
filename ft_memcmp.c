@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 13:05:42 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:41:36 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,18 +30,22 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-/*#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main(void)
-{
-	char d[50] = "je suis Jerome";
-	const char	s[50] = "je suis jerome";
+// int main(void)
+// {
+// 	char src[50] = "salut";
 
-	printf("%d\n", ft_memcmp(d, s, 9));
+// 	ft_memcmp(((void *)0), src, 5);
 
-	char d1[50] = "je suis Jerome";
-	const char	s1[50] = "je suis jerome";
+	// char d[50] = "je suis Jerome";
+	// const char	s[50] = "je suis jerome";
 
-	printf("%d\n", memcmp(d1, s1, 9));
-}*/
+	// printf("%d\n", ft_memcmp(d, s, 9));
+
+	// char d1[50] = "je suis Jerome";
+	// const char	s1[50] = "je suis jerome";
+
+	// printf("%d\n", memcmp(d1, s1, 9));
+// }

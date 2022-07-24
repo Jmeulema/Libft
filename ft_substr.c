@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:31 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/18 13:04:35 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/22 12:34:01 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
-	if (ft_strlen(s) > len)
+	if (len < ft_strlen(s))
 		i = len;
 	else
 		i = ft_strlen(s);

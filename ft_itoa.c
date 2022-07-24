@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:31 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/18 13:32:29 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/24 14:49:41 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,14 +60,14 @@ char	*ft_itoa(int n)
 	return (result);
 }
 
-/*#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	printf("%s\n", ft_itoa(-2147483648));
-	printf("%s\n", ft_itoa(2147483647));
-	printf("%s\n", ft_itoa(42));
-	printf("%s\n", ft_itoa(-623));
-	printf("%s\n", ft_itoa(-0));
-	printf("%s\n", ft_itoa(-156));
-}*/
+// int	main(void)
+// {
+	// printf("%s\n", ft_itoa(-2147483648));
+	// printf("%s\n", ft_itoa(2147483647));
+	// printf("%s\n", ft_itoa(42));
+	// printf("%s\n", ft_itoa(-623));
+	// printf("%s\n", ft_itoa(-0));
+	// printf("%s\n", ft_itoa(-156));
+// }

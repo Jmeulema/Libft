@@ -6,15 +6,15 @@
 #    By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/16 17:42:28 by jmeulema          #+#    #+#              #
-#    Updated: 2022/07/18 18:00:44 by jmeulema         ###   ########.fr        #
+#    Updated: 2022/07/24 15:05:36 by jmeulema         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 RM = rm -rf
-cc = gcc
-FLags = -Wall -Wextra -Werror
+CC = gcc
+FLAGS = -Wall -Wextra -Werror
 
 INC = \
 			libft.h \
@@ -74,4 +74,4 @@ fclean : clean
 re : fclean all
 
 .c.o: $(SRCS)
-		$(CC) -c -o $@ $< $(FLAGS)
+		$(CC) $(FLAGS) -c -o $@ $<

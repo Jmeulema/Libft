@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:32:03 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/18 17:59:00 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/24 15:19:10 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,18 +100,18 @@ char	**ft_split(char const *s, char c)
 	return (tab);
 }
 
-/*#include <stdio.h>
+// #include <stdio.h>
 
-int		main(void)
-{
-	int i = 0;
-	char **tab;
-		
-	tab = ft_split("je suis parti dehors", ' ');
-	while (i < ft_get_nb_word("je suis parti dehors", ' '))
-	{
-		printf("string %d : %s\n", i, tab[i]);
-		i++;
-	}
-	return (0);
-}*/
+// int		main(void)
+// {
+	// int i = 0;
+	// char **tab;
+
+	// tab = ft_split((void *)0, ' ');
+	// while (i < ft_get_nb_word("je suis parti dehors", ' '))
+	// {
+	// 	// printf("string %d : %s\n", i, tab[i]);
+	// 	// i++;
+	// }
+	// return (0);
+// }

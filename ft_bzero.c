@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/16 19:17:29 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:40:51 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,18 +26,20 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-/*#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main(void)
-{
-	char	s[] = "je suis jerome";
+// int main(void)
+// {
+// 	ft_bzero((void *)0, 3);
 
-	ft_bzero(s, 3);
-	printf("%s\n", s);
+// 	char	s[] = "je suis jerome";
 
-	char	s1[] = "je suis jerome";
+// 	ft_bzero(s, 3);
+// 	printf("%s\n", s);
 
-	bzero(s1, 3);
-	printf("%s\n", s1);
-}*/
+// 	char	s1[] = "je suis jerome";
+
+// 	bzero(s1, 3);
+// 	printf("%s\n", s1);
+// }

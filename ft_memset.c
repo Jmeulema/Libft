@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/12 13:12:17 by jmeulema         ###   ########.fr       */
+/*   Created: 2022/07/24 15:09:48 by jmeulema          #+#    #+#             */
+/*   Updated: 2022/07/24 16:40:35 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,25 +27,28 @@ void	*ft_memset(void *b, int c, size_t n)
 	return (str);
 }
 
-/*#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main()
-{
-    int c;
-    char str[] = "j'aime les pommes";
-    
-    c = 'e';
-    printf("%s\n", ft_memset(str, c, 1));
-    printf("%s\n", memset(str, c, 1));
+// int main()
+// {
+//     int c;
 
-    c = '1';
-    printf("%s\n", ft_memset(str, c, 3));
-    printf("%s\n", memset(str, c, 3));
+//     c = '1';
+//     ft_memset((void *)0, c, 4);
 
+//     int c;
+//     char str[] = "j'aime les pommes";
 
+//     c = 'e';
+//     printf("%s\n", ft_memset(str, c, 1));
+//     printf("%s\n", memset(str, c, 1));
 
-    c = '\0';
-    printf("%s\n", ft_memset(str, c, 5));
-    printf("%s\n", memset(str, c, 5));
-}*/
+//     c = '1';
+//     printf("%s\n", ft_memset(str, c, 3));
+//     printf("%s\n", memset(str, c, 3));
+
+//     c = '\0';
+//     printf("%s\n", ft_memset(str, c, 5));
+//     printf("%s\n", memset(str, c, 5));
+// }

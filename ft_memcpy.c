@@ -6,7 +6,7 @@
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 13:34:17 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/20 19:14:16 by jmeulema         ###   ########.fr       */
+/*   Updated: 2022/07/24 16:44:31 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,18 +31,22 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-/*#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main(void)
-{
-	char d[50] = {1, 2, 3};
-	const char	s[50] = "vous etes fort";
+// int main(void)
+// {
+	// char src[50] = "salut";
 
-	printf("%s\n", ft_memcpy(d, s, 3));
+	// ft_memcpy((void *)0, src, 5);
 
-	char d1[50] = {1, 2, 3};
-	const char	s1[50] = "vous etes fort";
+	// char d[50] = {1, 2, 3};
+	// const char	s[50] = "vous etes fort";
 
-	printf("%s\n", memcpy(d1, s1, 3));
-}*/
+	// printf("%s\n", ft_memcpy(d, s, 3));
+
+	// char d1[50] = {1, 2, 3};
+	// const char	s1[50] = "vous etes fort";
+
+	// printf("%s\n", memcpy(d1, s1, 3));
+// }

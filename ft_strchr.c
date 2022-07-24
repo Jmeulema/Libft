@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmeulema <jmeulema@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/04 13:32:03 by jmeulema          #+#    #+#             */
-/*   Updated: 2022/07/21 13:18:57 by jmeulema         ###   ########.fr       */
+/*   Created: 2022/07/24 15:24:07 by jmeulema          #+#    #+#             */
+/*   Updated: 2022/07/24 16:46:21 by jmeulema         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,33 +28,37 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-/*#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main()
-{
-    int c;
-    char s[] = "0j'aime les pommes";
-    
-    c = 'e';
-    printf("%s\n", ft_strchr(s, c));
-    printf("%s\n", strchr(s, c));
+// int main()
+// {
+//     int c;
 
-    c = 'z';
-    printf("%s\n", ft_strchr(s, c));
-    printf("%s\n", strchr(s, c));
+//     c = 'z';
+//     ft_strchr((void *)0, c);
+	// int c;
+	// char s[] = "0j'aime les pommes";
 
-     c = '0';
-    printf("%s\n", ft_strchr(s, c));
-    printf("%s\n", strchr(s, c));
+	// c = 'e';
+//     printf("%s\n", ft_strchr(s, c));
+//     printf("%s\n", strchr(s, c));
 
-    c = '\0';
-    printf("%s\n", ft_strchr(s, c));
-    printf("%s\n", strchr(s, c));
+//     c = 'z';
+//     printf("%s\n", ft_strchr(s, c));
+//     printf("%s\n", strchr(s, c));
 
-	char s1[] = "";
-    
-    c = '\0';
-    printf("%s\n", ft_strchr(s1, c));
-    printf("%s\n", strchr(s1, c));
-}*/
+//      c = '0';
+//     printf("%s\n", ft_strchr(s, c));
+//     printf("%s\n", strchr(s, c));
+
+//     c = '\0';
+//     printf("%s\n", ft_strchr(s, c));
+//     printf("%s\n", strchr(s, c));
+
+// 	char s1[] = "";
+
+//     c = '\0';
+//     printf("%s\n", ft_strchr(s1, c));
+//     printf("%s\n", strchr(s1, c));
+// }
